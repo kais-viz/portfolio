@@ -5,8 +5,8 @@
   >
     <v-card-text>
       <content-section title="Who am I?">
-        I am a Full Stack Developer and Data Scientist born in Jordan. I am skilled in different topics of Computer Science including frontend &amp; backend development, data analytics. and machine learning.<br>
-        Working on starting a business has shown me how powerful data-driven decision making can be, which fueled my interest in machine learning. Passionate about data science and cannot resist those Kaggle datasets. Don’t forget to check out my Github contributions, too.
+        I am a Full Stack Developer and Data Scientist born in Jordan. I am skilled in different topics of Computer Science including frontend &amp; backend development, data analytics, and machine learning.<br>
+        Working on starting a business has shown me how powerful data-driven decision making can be, which fueled my interest in machine learning. Passionate about data science and cannot resist those Kaggle datasets. Don’t forget to check out my Github contributions.
       </content-section>
       <!-- <content-section
         v-if="prouds"
@@ -44,10 +44,10 @@
           :key="i"
           mb-2
         >
-          <v-flex md4>
+          <v-flex md4 xs3>
             {{ education.from }} - {{ education.to }}
           </v-flex>
-          <v-flex md8>
+          <v-flex md8 xs9>
             <strong v-if="education.title">{{ education.title }}</strong>
             <div v-if="education.location">
               <i>{{ education.location }}</i>
@@ -63,9 +63,9 @@
         id="to-timeline"
         title="Skills"
       >
-        <template slot="actions">
+        <!-- <template slot="actions">
           (% are relative not absolute)
-        </template>
+        </template> -->
         <v-layout wrap>
           <template v-for="(skill, i) in skills">
             <v-flex
@@ -113,7 +113,7 @@ export default {
       {
         from       : '2019',
         to         : '2019',
-        title      : 'Machine Learning and Data Analytics Bootcamp',
+        title      : 'Machine Learning & Data Analytics Bootcamp',
         location   : 'Ubiqum Code Academy',
         description:
           'Five-month full-time project-based bootcamp using realistic business cases and datasets (see RPubs). During the course, I built machine learning pipelines and models for multiple projects.',

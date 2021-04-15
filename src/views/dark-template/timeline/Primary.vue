@@ -68,7 +68,7 @@
                         :md12="!item.image"
                         xs12
                       >
-                        <div class="mr-5 mb-2">
+                        <div class="mb-2">
                           <span
                             v-if="item.text"
                             class="pre"
@@ -87,7 +87,7 @@
                         xs12
                       >
                         <div
-                          class="mt-2 mb-2"
+                          class="mt-2 mb-2 ml-5"
                         >
                           <v-carousel
                             v-if="Array.isArray(item.image)"
@@ -198,21 +198,21 @@ export default {
             I completed part one of the <a target="_blank" href="https://course.fast.ai/">fast.ai course</a> (a Python library that sits on top of PyTorch) 
             while creating <a target="_blank" href="https://www.kaggle.com/kaiska">Kaggle kernels</a> to document my progress.
           </p>
-          <p>I applied FastAi on Kaggle competition's dataset from the 
+          <p>I applied fast.ai on Kaggle competition's dataset from the 
           <a target="_blank" href="https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge">
           Facial Expression Recognition Challenge</a>. 
           It's based on lesson's <a target="_blank" href="https://course.fast.ai/videos/?lesson=1">one</a> and 
-          <a target="_blank" href="https://course.fast.ai/videos/?lesson=2">two</a> of the fastai course. 
+          <a target="_blank" href="https://course.fast.ai/videos/?lesson=2">two</a> of the fast.ai course. 
           <p>
           I also applied the library on an apparel image dataset that I compiled from multiple sources and creating a multi-label classification model based on what 
-          I learned from Jeremy Howard's <a target="_blank" href="https://course.fast.ai/videos/?lesson=3">lesson 3</a> of the fastai course.
+          I learned from Jeremy Howard's <a target="_blank" href="https://course.fast.ai/videos/?lesson=3">lesson 3</a> of the fast.ai course.
           </p>
           <p>The source codes can be found here: <a target="_blank" href="https://github.com/kais-viz/facial-recognition-fastai">kais-viz/facial-recognition-fastai</a><br>
           and here: <a target="_blank" href="https://github.com/kais-viz/multi-label-classification-fastai">kais-viz/multi-label-classification-fastai</a>
           </p>
         `,
         image      : 'img/timeline/fast-ai.png',
-        imageHeight: 240,
+        imageHeight: 300,
         iconImage  : 'img/timeline/fast.ai.png',
       },
       {
@@ -223,7 +223,7 @@ export default {
           <li>Built a dash powered website from scratch and deployed it to google’s app engine.</li>
           <li>Composed python scripts that loaded raw data from the web and sanitized it before storing it in MySQL database.</li>
           <li>Cleaned the base code and added documentation and logging to the script files.</li>
-          <li>I Orchestrated and developed a technology stack to move the startup to a more scalable foundation, 
+          <li>I orchestrated and developed a technology stack to move the startup to a more scalable foundation, 
           while avoiding vendor lock in. I also lead the idea to migrate the stack to AWS from Google Cloud, with a 75% reduction in costs.</li>
           <li>Fully Developed the company’s new website, the following technologies were used:</li>
           <ul><li>Vue.js and Nuxt.js frameworks for the frontend and routing of the website, increased the load speed of the graphs by more than 

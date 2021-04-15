@@ -88,6 +88,11 @@ export default {
               text: 'June 2nd, 1991',
             },
             {
+              name: 'Nationality',
+              icon: 'mdi-flag',
+              text: 'Greek - Jordanian',
+            },
+            {
               name: 'Habitation',
               icon: 'mdi-map-marker',
               text: 'Wageningen, Netherlands',
@@ -108,20 +113,28 @@ export default {
               link: 'https://linkedin.com/in/kaiskawar',
             },
             {
-              icon: 'mdi-language-r',
-              text: 'rpubs.com/kaisk',
-              link: 'https://rpubs.com/kaisk',
-            },
-            {
               icon: 'mdi-alpha-k',
               text: 'kaggle.com/kaiska',
               link: 'https://www.kaggle.com/kaiska',
+            },
+            {
+              icon: 'mdi-language-r',
+              text: 'rpubs.com/kaisk',
+              link: 'https://rpubs.com/kaisk',
             },
           ],
         },
         hobbies: {
           title: 'HOBBIES',
           items: [
+            {
+              icon: 'mdi-bullseye',
+              text: 'Getting out of Safe Zone',
+            },
+            {
+              icon: 'mdi-sword-cross ',
+              text: 'Challenges',
+            },
             {
               icon: 'mdi-airplane-takeoff',
               text: 'Travelling',
@@ -131,20 +144,12 @@ export default {
               text: 'Nature',
             },
             {
-              icon: 'mdi-bullseye',
-              text: 'Getting out of Safe Zone',
-            },
-            {
-              icon: 'mdi-biohazard',
-              text: 'Challenges',
-            },
-            {
-              icon: 'mdi-laptop',
-              text: 'Gaming',
-            },
-            {
               icon: 'mdi-bike',
               text: 'Cycling',
+            },
+            {
+              icon: 'mdi-google-controller',
+              text: 'Gaming',
             },
           ],
         },
