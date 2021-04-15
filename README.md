@@ -2,7 +2,7 @@
 
 1. Clone this repository.
 
-```
+```sh
 git clone https://github.com/kais-viz/portfolio
 ```
 
@@ -17,6 +17,10 @@ git clone https://github.com/kais-viz/portfolio
 6. Build it with `npm run build`.
 
 7. Deploy it using instructions here: https://cli.vuejs.org/guide/deployment.html#pwa
+
+```
+sh deploy.sh
+```
 
 ## License
 
