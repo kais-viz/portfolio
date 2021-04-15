@@ -16,10 +16,35 @@ git clone https://github.com/kais-viz/portfolio
 
 6. Build it with `npm run build`.
 
-7. Deploy it using instructions here: https://cli.vuejs.org/guide/deployment.html#pwa
+7. Make sure `/dist` is not ignored by `.gitignore`.
 
-```
-sh deploy.sh
+8. Push changes to github.
+
+9) Deploy it to github pages using instructions here: https://cli.vuejs.org/guide/deployment.html#pwa
+
+```sh
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+npm run build
+
+# navigate into the build output directory
+cd dist
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:kais-viz/kais-viz.github.io.git master
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:kais-viz/portfolio.git master:gh-pages
+
+cd -
 ```
 
 ## License

@@ -68,7 +68,7 @@
                         :md12="!item.image"
                         xs12
                       >
-                        <div class="mr-1">
+                        <div class="mr-5 mb-2">
                           <span
                             v-if="item.text"
                             class="pre"
@@ -87,7 +87,7 @@
                         xs12
                       >
                         <div
-                          class="mt-2"
+                          class="mt-2 mb-2"
                         >
                           <v-carousel
                             v-if="Array.isArray(item.image)"
@@ -104,6 +104,7 @@
                             v-else
                             :max-height="item.imageHeight ? item.imageHeight : ''"
                             :src="publicPath(item.image)"
+                            class="img-corners"
                           />
                         </div>
                       </v-flex>
@@ -158,10 +159,12 @@ export default {
         title      : 'Worked as a full stack developer on various pojects',
         html       : `
           <ul>
-          <li>MailAwesome was my brainchild business idea, a SaaS CRM helpdesk aiming to simplify customer ticketing by connecting Google Mail amongst multiple users within the same organization; aimed at small-to-medium businesses.</li>
-          <li>Built the backend service to automate ticket assignment amongst a team by utilising Gmail API, MongoDB and Java Spring Framework.</li>
+          <li>MailAwesome was my brainchild business idea, a SaaS CRM helpdesk aiming to simplify customer ticketing by connecting Google Mail amongst multiple 
+          users within the same organization; aimed at small-to-medium businesses.
+          <ul><li>Built the backend service to automate ticket assignment amongst a team by utilising Gmail API, MongoDB and Java Spring Framework.</li></ul></li>
           <li>Self-employment meant learning to do my own project management, product development, and research projects from scratch.</li>
-          <li>Built and delivered data visualization dashboards and reports, working on a contract basis with Foresite, my previous employer, utilising D3/DC and native Javascript. Sample work published on github.</li>
+          <li>Built and delivered data visualization dashboards and reports, working on a contract basis with Foresite, my previous employer, 
+          utilising D3/DC and native Javascript. Sample work published on github.</li>
           </ul>
         `,
         icon: 'mdi-web',
@@ -171,7 +174,8 @@ export default {
         title: 'Machine Learning and Data Analytics Bootcamp',
         html : `
           <p>
-          Five-month full-time project-based bootcamp using realistic business cases and datasets (see RPubs). During the course, I built machine learning pipelines and models for multiple projects. The following are some highlights:
+          Five-month full-time project-based bootcamp using realistic business cases and datasets (<a target="_blank" href="https://rpubs.com/kaisk">see RPubs</a>). 
+          During the course, I built machine learning pipelines and models for multiple projects. The following are some highlights:
           </p>
           <ul>
           <li>Predicted purchasing trends using R for market basket analysis utilising historical transaction records.</li>
@@ -191,33 +195,48 @@ export default {
         title      : 'Used Fast.ai to create neural network powered applications',
         html       : `
           <p>
-              Found here: <a target="_blank" href="https://github.com/kais-viz/multi-label-classification-fastai">kais-viz/multi-label-classification-fastai</a><br>
-              And here: <a target="_blank" href="https://github.com/kais-viz/facial-recognition-fastai">kais-viz/facial-recognition-fastai</a>
+            I completed part one of the <a target="_blank" href="https://course.fast.ai/">fast.ai course</a> (a Python library that sits on top of PyTorch) 
+            while creating <a target="_blank" href="https://www.kaggle.com/kaiska">Kaggle kernels</a> to document my progress.
           </p>
+          <p>I applied FastAi on Kaggle competition's dataset from the 
+          <a target="_blank" href="https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge">
+          Facial Expression Recognition Challenge</a>. 
+          It's based on lesson's <a target="_blank" href="https://course.fast.ai/videos/?lesson=1">one</a> and 
+          <a target="_blank" href="https://course.fast.ai/videos/?lesson=2">two</a> of the fastai course. 
           <p>
-            A Vue.js-based and powered-by-Vuetify (material UI kit) resume template which you're seeing right now!
+          I also applied the library on an apparel image dataset that I compiled from multiple sources and creating a multi-label classification model based on what 
+          I learned from Jeremy Howard's <a target="_blank" href="https://course.fast.ai/videos/?lesson=3">lesson 3</a> of the fastai course.
+          </p>
+          <p>The source codes can be found here: <a target="_blank" href="https://github.com/kais-viz/facial-recognition-fastai">kais-viz/facial-recognition-fastai</a><br>
+          and here: <a target="_blank" href="https://github.com/kais-viz/multi-label-classification-fastai">kais-viz/multi-label-classification-fastai</a>
           </p>
         `,
         image      : 'img/timeline/fast-ai.png',
-        imageHeight: 200,
+        imageHeight: 240,
         iconImage  : 'img/timeline/fast.ai.png',
       },
       {
         year : '2020-Present',
-        title: 'Working at Omi Health Startup as a Data Scientist and Developer',
+        title: 'Working at Omi Health Startup as a Data Scientist and Full Stack Developer',
         html : `
-          <p>
-              Available on: <a target="_blank" href="http://covidplanner.nl/">covidplanner.nl</a>
-          </p>
-          <p>
-            Telegram Web Bridge is a bidirectional, web-based, proxy-like application which can act as a middleman for Telegram Bot API requests (from your actual application to Telegram) and Webhooks (from Telegram to your actual application).
-          </p>
-          <p>
-            It was initially developed because of Telegram censorship in Iran and the need for it in a storage management software we've built. I decided to publish the codes so anyone with the same problem will be able to handle it.
-          </p>
+          <ul><li>Advanced the SIR compartmental Model formula adopted in the coronavirus predictive model.</li>
+          <li>Built a dash powered website from scratch and deployed it to google’s app engine.</li>
+          <li>Composed python scripts that loaded raw data from the web and sanitized it before storing it in MySQL database.</li>
+          <li>Cleaned the base code and added documentation and logging to the script files.</li>
+          <li>I Orchestrated and developed a technology stack to move the startup to a more scalable foundation, 
+          while avoiding vendor lock in. I also lead the idea to migrate the stack to AWS from Google Cloud, with a 75% reduction in costs.</li>
+          <li>Fully Developed the company’s new website, the following technologies were used:</li>
+          <ul><li>Vue.js and Nuxt.js frameworks for the frontend and routing of the website, increased the load speed of the graphs by more than 
+          150% compared to the dash website.</li>
+          <li>Strapi CMS for the backend to manage users and primarily used to serve the API endpoints.</li>
+          <li>Amazon RDS (Aurora) was used as a fully managed database solution, reducing costs by eliminating the need for a database admin.</li>
+          <li>Docker hub to host website images and docker swarm for easy deployment.</li>
+          <li>Carefully picked graph colours to be <a target="_blank" href="https://lospec.com/palette-list/ibm-color-blind-safe">colourblind safe</a>.</li></ul></ul>
+          <br>
+          <p>Available on: <a target="_blank" href="http://covidplanner.nl/">covidplanner.nl</a></p>
         `,
         image    : 'img/timeline/omihealth.png',
-        iconImage: 'img/timeline/covidplanner-icon.png',
+        iconImage: 'img/timeline/covidplanner-icon.jpg',
       },
     ],
   }),
@@ -244,5 +263,8 @@ export default {
 }
 .transparent{
   opacity: 0.6;
+}
+.img-corners {
+    border-radius: 3px;
 }
 </style>

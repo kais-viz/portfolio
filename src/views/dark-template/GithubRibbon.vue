@@ -39,7 +39,7 @@
 <script>
 export default {
   name: 'GithubRibbon',
-  data: () => ({ url: 'https://github.com/kais-viz/kais-viz.github.io' }),
+  data: () => ({ url: 'https://github.com/kais-viz/portfolio' }),
 }
 </script>
 

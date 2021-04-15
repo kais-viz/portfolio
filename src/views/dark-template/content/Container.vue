@@ -141,7 +141,12 @@ export default {
         value: 85,
       },
       {
-        title: 'Vue.js Framework',
+        title: 'Vue.js',
+        icon : 'mdi-vuejs',
+        value: 75,
+      },
+      {
+        title: 'Nuxt.js',
         icon : 'mdi-vuejs',
         value: 75,
       },
@@ -196,6 +201,11 @@ export default {
         icon : 'mdi-sass',
         value: 55,
       },
+      {
+        title: 'Tableau',
+        icon : 'mdi-periodic-table',
+        value: 49,
+      },
       { divider: true },
       {
         title: 'Responsive Web Design',
@@ -240,7 +250,7 @@ export default {
       },
       {
         title: 'Problem Solving',
-        icon : 'mdi-account-group',
+        icon : 'mdi-lightbulb',
         value: 86,
       },
     ],

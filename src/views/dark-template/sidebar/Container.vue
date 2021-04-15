@@ -175,4 +175,5 @@ export default {
 .sidebar {
   background: #2e2e2e;
 }
+
 </style>
