@@ -87,7 +87,7 @@
                         xs12
                       >
                         <div
-                          class="mt-2 mb-2 ml-5"
+                          class="mt-2 mb-2 img-margins"
                         >
                           <v-carousel
                             v-if="Array.isArray(item.image)"
@@ -267,4 +267,11 @@ export default {
 .img-corners {
     border-radius: 3px;
 }
+
+@media (min-width: 1024px) {
+  .img-margins {
+    margin-left: 1.25rem/* 20px */;
+  }
+}
+
 </style>
