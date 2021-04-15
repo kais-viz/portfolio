@@ -5,8 +5,8 @@
   >
     <v-card-text>
       <content-section title="Who am I?">
-        I am a Full Stack Developer and Data Scientist born in Jordan.<br>
-        I am skilled in different topics of Computer Science including frontend &amp; backend development, data analytics. and machine learning.
+        I am a Full Stack Developer and Data Scientist born in Jordan. I am skilled in different topics of Computer Science including frontend &amp; backend development, data analytics. and machine learning.<br>
+        Working on starting a business has shown me how powerful data-driven decision making can be, which fueled my interest in machine learning. Passionate about data science and cannot resist those Kaggle datasets. Don’t forget to check out my Github contributions, too.
       </content-section>
       <!-- <content-section
         v-if="prouds"
@@ -42,6 +42,7 @@
         <v-layout
           v-for="(education, i) in educations"
           :key="i"
+          mb-2
         >
           <v-flex md4>
             {{ education.from }} - {{ education.to }}
@@ -112,7 +113,7 @@ export default {
       {
         from       : '2019',
         to         : '2019',
-        title      : "Bachelor's degree, Information Technology",
+        title      : 'Machine Learning and Data Analytics Bootcamp',
         location   : 'Ubiqum Code Academy',
         description:
           'Five-month full-time project-based bootcamp using realistic business cases and datasets (see RPubs). During the course, I built machine learning pipelines and models for multiple projects.',

@@ -80,7 +80,7 @@ export default {
             {
               name: 'Website',
               icon: 'mdi-web',
-              text: 'kais-viz@github.io',
+              text: 'kais-viz@github.io/portfolio',
             },
             {
               name: 'Birth Date',
