@@ -5,7 +5,7 @@
       size="120"
     >
       <img
-        :src="publicPath('/img/kais-profile.jpg')"
+        :src="publicPath('/img/kais2.jpg')"
         alt="Kais Kawar"
       >
     </v-avatar>
